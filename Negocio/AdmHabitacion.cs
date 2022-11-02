@@ -13,8 +13,13 @@ namespace Negocio
 
         public List<Habitacion> Listar()
         {
-            //TODO completar codigo
-            return null;
+            habitaciones = new List<Habitacion>();
+            habitaciones.Add(new Habitacion(0, 113, true));
+            habitaciones.Add(new Habitacion(1, 111, false));
+            habitaciones.Add(new Habitacion(2, 211, true));
+            habitaciones.Add(new Habitacion(3, 126, false));
+            habitaciones.Add(new Habitacion(4, 222, false));
+            return habitaciones;
         }
 
         public List<Habitacion> Listar(int estado)
