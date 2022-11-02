@@ -14,7 +14,7 @@ namespace Entidades
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Domicilio { get; set; }
-        public long Telefono { get; set; }
+        public string Telefono { get; set; }
         public string Email { get; set; }
 
         #endregion
@@ -22,7 +22,7 @@ namespace Entidades
 
         public Persona() { }
 
-        public Persona(int id, string nombre, string apellido, string domicilio, long telefono, string email)
+        public Persona(int id, string nombre, string apellido, string domicilio, string telefono, string email)
         {
             Id = id;
             Nombre = nombre;

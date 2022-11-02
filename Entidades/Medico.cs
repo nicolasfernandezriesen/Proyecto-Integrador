@@ -18,7 +18,7 @@ namespace Entidades
 
         public Medico() { }
 
-        public Medico(string especialidad, string matricula, int id, string nombre, string apellido, string domicilio, long telefono, string email) : base(id, nombre, apellido, domicilio, telefono, email)
+        public Medico(string especialidad, string matricula, int id, string nombre, string apellido, string domicilio, string telefono, string email) : base(id, nombre, apellido, domicilio, telefono, email)
         {
             Especialidad = especialidad;
             Matricula = matricula;

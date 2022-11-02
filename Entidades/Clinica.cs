@@ -13,7 +13,7 @@ namespace Entidades
         public int Id { get; set; }
         public string Name { get; set; }
         public string Domicilio { get; set; }
-        public long Telefono { get; set; }
+        public string Telefono { get; set; }
         public string Email { get; set; }
 
         #endregion
@@ -21,7 +21,7 @@ namespace Entidades
 
         public Clinica() { }
 
-        public Clinica(int id, string name, string domicilio, long telefono, string email)
+        public Clinica(int id, string name, string domicilio, string telefono, string email)
         {
             Id = id;
             Name = name;

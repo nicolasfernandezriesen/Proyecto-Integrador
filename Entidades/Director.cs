@@ -17,7 +17,7 @@ namespace Entidades
 
         public Director() { }
 
-        public Director(string postGrado, string especialidad, string matricula, int id, string nombre, string apellido, string domicilio, long telefono, string email) : base (especialidad, matricula, id, nombre, apellido, domicilio, telefono, email)
+        public Director(string postGrado, string especialidad, string matricula, int id, string nombre, string apellido, string domicilio, string telefono, string email) : base (especialidad, matricula, id, nombre, apellido, domicilio, telefono, email)
         {
             PostGrado = postGrado;
         }

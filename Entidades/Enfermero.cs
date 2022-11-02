@@ -17,7 +17,7 @@ namespace Entidades
 
         public Enfermero() { }
 
-        public Enfermero(int cuil, int id, string nombre, string apellido, string domicilio, long telefono, string email) : base(id, nombre, apellido, domicilio, telefono, email)
+        public Enfermero(int cuil, int id, string nombre, string apellido, string domicilio, string telefono, string email) : base(id, nombre, apellido, domicilio, telefono, email)
         {
             Cuil = cuil;
         }
