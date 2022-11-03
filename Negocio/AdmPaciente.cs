@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmPaciente
+    public static class AdmPaciente
     {
-        public List<Paciente> pacientes;
-        public List<Paciente> Listar()
+        public static List<Paciente> Listar()
         {
-            pacientes = new List<Paciente>();
+            List<Paciente> pacientes = new List<Paciente>();
             pacientes.Add(new Paciente("MMD0023GA", 0, "Julian", "Norak", "Alvarado 2259", "2235802647", "pota@gmail.com"));
             pacientes.Add(new Paciente("AGKT77890DR", 1, "Thiago", "Giler", "España 3750", "2235554111", "monster56@gmail.com"));
             pacientes.Add(new Paciente("TTYI54021FF", 2, "Emilia", "Ciel Korat", "Alvarado 2014", "2235996320", "rosaliiia@gmail.com"));
@@ -21,19 +20,19 @@ namespace Negocio
             return pacientes;
         }
 
-        public int Insertar(Paciente paciente)
+        public static int Insertar(Paciente paciente)
         {
             //TODO completar codigo
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO completar codigo
             return 0;
         }
 
-        public Paciente TraerUno(string nroHistoriaClinica)
+        public static Paciente TraerUno(string nroHistoriaClinica)
         {
             //TODO completar codigo
             return null;

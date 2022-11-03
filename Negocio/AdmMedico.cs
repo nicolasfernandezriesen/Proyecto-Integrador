@@ -7,12 +7,11 @@ using Entidades;
 
 namespace Negocio
 {
-    public class AdmMedico
+    public static class AdmMedico
     {
-        List<Medico> medicos;
-        public List<Medico> Listar()
+        public static List<Medico> Listar()
         { 
-            medicos = new List<Medico>();
+            List<Medico> medicos = new List<Medico>();
             medicos.Add(new Medico("Clinico", "AB505", 0, "Julio", "Harmo", "Castelli 3025", "223542336", "julha@gmail.com"));
             medicos.Add(new Medico("Clinico", "AB600", 1, "Sol", "Berto", "San Juan 1230", "2236210885", "latu@gmail.com"));
             medicos.Add(new Medico("Pediatra", "AA001", 2, "Luna", "Nikka", "Corrientes 760", "2235622100", "l.kka@gmail.com"));
@@ -22,25 +21,25 @@ namespace Negocio
             return medicos;
         }
 
-        public List<Medico> Listar(string especialidad)
+        public static List<Medico> Listar(string especialidad)
         {
             //TODO completar funcion 
             return null;
         }
 
-        public int Insertar(Medico medico)
+        public static int Insertar(Medico medico)
         {
             //TODO completar codigo
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO completar codigo
             return 0;
         }
 
-        public Paciente TraerUno(string nroHistoriaClinica)
+        public static Paciente TraerUno(string nroHistoriaClinica)
         {
             //TODO completar codigo
             return null;

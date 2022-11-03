@@ -17,9 +17,6 @@ namespace WindowsPresentacion
         List<Paciente> pacientes;
         List<Medico> medicos;
         List<Habitacion> habitaciones;
-        AdmMedico admMedico;
-        AdmPaciente admPaciente;
-        AdmHabitacion admHabitacion;
 
         public Form1()
         {
@@ -31,13 +28,10 @@ namespace WindowsPresentacion
             pacientes = new List<Paciente>();
             medicos = new List<Medico>();
             habitaciones = new List<Habitacion>();
-            admPaciente = new AdmPaciente();
-            admMedico = new AdmMedico();
-            admHabitacion = new AdmHabitacion();
 
-            pacientes = admPaciente.Listar();
-            medicos = admMedico.Listar();
-            habitaciones = admHabitacion.Listar();
+            pacientes = AdmPaciente.Listar();
+            medicos = AdmMedico.Listar();
+            habitaciones = AdmHabitacion.Listar();
 
             MessageBox.Show("Sistema cargado correctamente");
         }
